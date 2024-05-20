@@ -5,7 +5,7 @@ class Weather extends Equatable {
   final double temperatureCelsius;
   final double? temperatureFahrenheit;
 
-  Weather({
+  const Weather({
     required this.cityName,
     required this.temperatureCelsius,
     this.temperatureFahrenheit,

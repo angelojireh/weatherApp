@@ -11,7 +11,7 @@ part 'weather_state.dart';
 class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
   final WeatherRepository repository;
 
-  WeatherBloc(this.repository) : super(WeatherInitial()) {
+  WeatherBloc(this.repository) : super(const WeatherInitial()) {
     on<WeatherEvent>((event, emit) async {
       emit(const WeatherLoading());
 
